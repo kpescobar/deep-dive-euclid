@@ -5,7 +5,10 @@ public class Gcd {
     try {
       int a = Integer.parseInt(args[0]);
       int b = Integer.parseInt(args[1]);
-      System.out.printf("a= %d, b= %d%n", a, b);
+      int c = gcd(a, b);
+      
+      System.out.printf("The GCD of (%d, %d) = %d%n", a, b, c);
+      
     } catch (NumberFormatException ex) {
       ex.printStackTrace();
       System.out.println("This application requires two integer arguments on the command line.");
@@ -14,7 +17,10 @@ public class Gcd {
       System.out.println("This application requires two integer arguments on the command line.");
       }
   }
-
+  
+  public static int gcd(int a, int b) {
+    return 0;
+  }
 
 
 }
