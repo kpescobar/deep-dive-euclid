@@ -10,6 +10,9 @@ public class Gcd {
       ex.printStackTrace();
       System.out.println("This application requires two integer arguments on the command line.");
     }
+      catch (ArrayIndexOutOfBoundsException ex) {
+      System.out.println("This application requires two integer arguments on the command line.");
+      }
   }
 
 
